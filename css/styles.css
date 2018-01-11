@@ -1,0 +1,33 @@
+body {
+  padding-top: 3.5rem;
+}
+
+#profile-picture{
+	padding-left: 100px;
+	width:75%;
+}
+
+.clear-fix{
+    clear:both;
+}
+
+#jumbo-table{
+	
+}
+
+#jumbo-table td{
+	
+	vertical-align: top;
+	text-align: left;
+	
+}
+
+#project-list{
+	padding-top: 3.5em;
+}
+
+.project-thumb{
+	
+	width:100%;
+	
+}
