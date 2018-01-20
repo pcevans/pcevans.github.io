@@ -5,6 +5,7 @@ body {
 #profile-picture{
 	padding-left: 100px;
 	width:75%;
+	min-width:350px;
 }
 
 .clear-fix{
