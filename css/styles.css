@@ -36,14 +36,3 @@ body {
 section {
   padding: 75px 0;
 }
-
-.carousel {
-   max-width: 900px;
-   overflow: hidden;
-}
-
-.col-sm-2cols {
-        width: 50%;
-        float: left;
-    }
-}
