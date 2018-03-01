@@ -30,78 +30,50 @@
 		</nav>
 
 		<main role="main">
-			<section id="piglet" class="bg-light">
+			<section id="capstone" class="bg-light">
 			  <div class="container">
 				<div class="row">
 				  <div class="col-lg-12 mx-auto">
-					<h2>Piglet's Revenge</h2>
-					<p><i>Unity2D/C#</i></p>
+					<h2>Coastal Quest Scavenger Hunts</h2>
+					<p><i>Flask/Javascript/Python — Fall 2017</i></p>
+					
 					<br />
-					<img class="w-75 mx-auto d-block" src="img/piglet.png"></img>
+					<div class="container" style="text-align:center;">
+						<img style="vertical-align: middle;" width="400" height="245" src="img/cq-logo.png"></img>
+						<video style="vertical-align: middle;" width="270" height="480" controls poster="img/cq-poster.png">
+							<source src="img/cq-demo.mp4">
+							Your browser does not support the video tag.
+						</video>
+						<img style="vertical-align: middle;" width="400" height="400" src="img/cq-qr.png"></img>
+					</div>
 					<br /><br />
-					<p>Piglet's Revenge, created in September 2016, is an Angry Birds-inspired casual strategy shooter where the player controls Piglet on his quest to get revenge against Winnie the Pooh.
-					The game was created to satisfy the requirements of an assignment, which included using many of Unity's 2D features, especially its physics engine.
-					The game won an in-class prize for best game to come out of this assignment.
+					
+					<p>Coastal Quest Scavenger Hunts is a scavenger hunt web app that was one of three featured Capstone projects for CSUMB's Fall 2017 semester. 
+					In the app, users were guided through the process of browsing through, buying, and playing a scavenger hunt, with scoreboards to show them how well they did as well as prizes for the top scoring team after the hunt's ending date.
+					This web app was developed by 4 computer science majors, each with a different concentration, serving the needs of a client with no technical experience.
+					The front-end was developed with ReactJS components and using Javascript code, and the backend was developed as a Flask app and used Python code.
+					Communication from front-end to back-end was facilitated by the Socket.IO library, and communication back to the front-end was facilitated by JSON callbacks.
 					</p>
 					<p>My major responsibilities for this project included:
 						<ul>
-							<li>Developing the user interface</li>
-							<li>Developing behavior scripts for all interactive game objects</li>
-							<li>Developing the pot-breaking mechanism</li>
-							<li>Developing the physics to make the game feel right</li>
+							<li>Developing the registration system and validating form information</li>
+							<li>Working with the Stripe API to securely receive money from customers</li>
+							<li>Storing all data in the PostgreSQL database and securing sensitive information using SHA-256</li>
+							<li>Developing the hunt closing and winner announcement algorithms</li>
+							<li>Creating bash scripts to streamline the application creation process</li>
 						</ul>
 					</p>
-					<br />
-					<h4>Download Game</h4>
-					<a href="games/Piglet's Revenge PC.zip"><img  src="img/button-windows.png" width="100px"></img></a>
-					<a href="games/Piglet's Revenge Mac.zip"><img src="img/button-mac.png" width="100px"></img></a>
-					<a href="games/Piglet's Revenge Android.apk"><img  src="img/button-android.png" width="100px"></img></a>
-					<br />
-					(Last updated: 2/2/2018)</p>
 				  </div>
 				</div>
 			  </div>
 			</section>
 			
-			
-			<section id="enkindle">
-			  <div class="container">
-				<div class="row">
-				  <div class="col-lg-12 mx-auto">
-					<h2>Enkindle</h2>
-					<p><i>Unity3D/C#/Cg</i></p>
-					
-					<br />
-					<img class="w-50" src="img/enkindle.png"></img><img class="w-50" src="img/enkindle2.png"></img>
-					<img class="w-50" src="img/enkindle3.png"></img><img class="w-50" src="img/enkindle4.png"></img>
-					<br clear="left"/>
-					<br /><br />
-					
-					<p>Enkindle, created in Fall 2016, is an RPG-style art game where the player controls a phoenix as it sets about changing the seasons from winter to spring.
-					The game was created as a collaboration between three game development students and a game design student from our university, as well as two artists and one animator from a Polish university, to simulate how game development happens in the industry.
-					As a game developer, my role was to make the design document come to life on the screen, and although we as a group didn't fulfill all of what the document specified, we managed to create a decent game given the 2 month time constraint.
-					</p>
-					<p>My major responsibilities for this project included:
-						<ul>
-							<li>Developing a terrain deformation algorithm for the snow layer</li>
-							<li>Developing a randomized procedural tree stand generation algorithm</li>
-							<li>Using the phoenix's collider to affect material changes in rocks and leaves</li>
-						</ul>
-					</p>
-					<h4>Download Game</h4>
-					<a href="https://csumb.itch.io/enkindle#download"><img  src="img/button-windows.png" width="100px"></img><img src="img/button-mac.png" width="100px"></img></a><br />
-					(Last updated: 12/10/2016)</p>
-				  </div>
-				</div>
-			  </div>
-			</section>
-
-			<section id="research"  class="bg-light">
+			<section id="research">
 			  <div class="container">
 				<div class="row">
 				  <div class="col-lg-12 mx-auto">
 					<h2>2016-17 Graphics Research Project</h2>
-					<p><i>DirectX 11.1/C++/HLSL</i></p>
+					<p><i>DirectX 11.1/C++/HLSL — Summer 2016-Summer 2017</i></p>
 					
 					<br />
 					<div id="carouselController" class="carousel w-75 mx-auto">
@@ -140,64 +112,27 @@
 						<span class="sr-only">Next</span>
 					  </a>
 					</div>
-					<br /><br />
-					
-					<p>Between the summer of 2016 and the summer of 2017, I, a fellow student researcher, and our mentor explored the potential for real-time, dynamically-built global illumination lighting systems. 
-					We used voxel cone global illumination (VXGI) as our lighting algorithm and stored voxel data in a sparse octree. 
-					During the project, we developed a way to update only the parts of the octree that had been changed from frame to frame.
-					We got this partially-dynamic system up and running at around 30FPS (on a NVIDIA GTX 1080 Ti graphics card) before our mentor moved to a different university and the research project ended.
+					<br />
+					<h5>Download Demo: 
+					<a href="games/CSUMB Research Project 2016-2017.zip"><img  src="img/button-windows.png" width="50px"></img></a></h5>
+					<p>(requires installation of <a href="https://www.microsoft.com/en-us/download/details.aspx?id=6812">DirectX June 2010 SDK</a>)</p>
+					<p>This research project explored the potential for real-time, dynamically-built global illumination lighting systems on modern GPU architectures.
+					This would allow game developers to get extremely accurate and dynamic lighting information without the need for space-consuming baked lighting maps.
+					Our team consisted of me, another undergraduate graphics researcher, and a mentor, and we worked on the project from June 2016 to August 2017.
+					In the project, we used voxel cone global illumination (VXGI) as our lighting algorithm and stored voxel data in a sparse octree. 
+					To help satisfy the real-time objective, we developed a partially-dynamic system that only updated moving objects and the spaces immediately surrounding them.
+					We got the system up and running at around 30FPS (on a NVIDIA GTX 1080 Ti graphics card) before our mentor moved to a different university and the project ended.
 					</p>
 					<p>My major responsibilities for this project included:
 						<ul>
 							<li>Writing the CPU-side code to set up the scene and direct the GPU's actions</li>
 							<li>Developing a highly parallelized algorithm for building an octree using compute shaders</li>
-							<li>Writing a highly parallelized algorithm for gathering voxels that had changed between frames using compute shaders</li>
+							<li>Developing a highly parallelized algorithm for gathering voxels on all levels of the octree that had changed between frames using compute shaders</li>
 							<li>Developing a triangle-to-points decomposition algorithm using tesselation and geometry shaders</li>
 							<li>Debugging the team's code</li>
 						</ul>
-					</p>
-					<h4>Download Demo</h4>
-					<a href="games/CSUMB Research Project 2016-2017.zip"><img  src="img/button-windows.png" width="100px"></img></a>
-					<p>(requires installation of <a href="https://www.microsoft.com/en-us/download/details.aspx?id=6812">DirectX June 2010 SDK</a>)<br />
-					(Last updated: 1/18/2018)</p>
-				  </div>
-				</div>
-			  </div>
-			</section>
-			
-			<section id="capstone">
-			  <div class="container">
-				<div class="row">
-				  <div class="col-lg-12 mx-auto">
-					<h2>Coastal Quest Scavenger Hunts</h2>
-					<p><i>Flask/Javascript/Python</i></p>
-					
-					<br />
-					<div class="container" style="text-align:center;">
-						<img style="vertical-align: middle;" width="400" height="245" src="img/cq-logo.png"></img>
-						<video style="vertical-align: middle;" width="270" height="480" controls poster="img/cq-poster.png">
-							<source src="img/cq-demo.mp4">
-							Your browser does not support the video tag.
-						</video>
-						<img style="vertical-align: middle;" width="400" height="400" src="img/cq-qr.png"></img>
-					</div>
-					<br /><br />
-					
-					<p>Coastal Quest Scavenger Hunts was a Capstone project created in Fall 2017 for a client who wanted to expand his tourism business to include scavenger hunts in addition to kayaking.
-					This web app was developed by 4 computer science majors, each with a different concentration, serving the needs of a client with no technical experience.
-					The front-end was developed with ReactJS components and using Javascript code, and the backend was developed as a Flask app and used Python code.
-					Communication from front-end to back-end was facilitated by the Socket.IO library, and communication back to the front-end was facilitated by JSON callbacks.
-					The project was one of three featured Capstone projects for the semester and earned glowing praise from the client.
-					</p>
-					<p>My major responsibilities for this project included:
-						<ul>
-							<li>Developing the registration system and validating form information</li>
-							<li>Working with the Stripe API to securely receive money from customers</li>
-							<li>Storing all data in the PostgreSQL database and securing sensitive information using SHA-256</li>
-							<li>Developing the hunt closing and winner announcement algorithms</li>
-							<li>Creating bash scripts to streamline the application building process</li>
-						</ul>
-					</p>
+					</p>					
+					<p>(Last updated: 1/18/2018)</p>
 				  </div>
 				</div>
 			  </div>
@@ -208,7 +143,7 @@
 				<div class="row">
 				  <div class="col-lg-12 mx-auto">
 					<h2>VR Prototyping Framework</h2>
-					<p><i>Unity3D/C#</i></p>
+					<p><i>Unity3D/C# — Summer 2017</i></p>
 					
 					<br />
 					<div class="container" style="text-align:center;">
@@ -233,7 +168,70 @@
 				  </div>
 				</div>
 			  </div>
+			</section>			
+			
+			<section id="enkindle">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-lg-12 mx-auto">
+					<h2>Enkindle</h2>
+					<p><i>Unity3D/C#/Cg — Fall 2016</i></p>
+					
+					<br />
+					<img class="w-50" src="img/enkindle.png"></img><img class="w-50" src="img/enkindle2.png"></img>
+					<img class="w-50" src="img/enkindle3.png"></img><img class="w-50" src="img/enkindle4.png"></img>
+					<br clear="left"/>
+					<br />
+					<h5>Download Game: 
+					<a href="https://csumb.itch.io/enkindle#download"><img  src="img/button-windows.png" width="50px"></img><img src="img/button-mac.png" width="50px"></img></a></h5>
+					<p>Enkindle is an RPG-style art game that won several class-decided awards at the end of the Fall 2016 semester, including first prize for Best Art and a runner-up prize for Best Game.
+					In the game, the player controls a phoenix as it sets about changing the seasons from winter to spring by melting snow and growing leaves on the trees.
+					The game was created as a collaboration between three game development students and a game design student from our university, as well as two artists and one animator from a Polish university, to simulate a real game studio setting.
+					</p>
+					<p>My major responsibilities for this project included:
+						<ul>
+							<li>Developing a terrain deformation algorithm for the snow layer</li>
+							<li>Developing a randomized procedural tree stand generation algorithm</li>
+							<li>Using the phoenix's collider to affect material changes in rocks and leaves</li>
+						</ul>
+					</p>
+					<p>(Last updated: 12/10/2016)</p>
+				  </div>
+				</div>
+			  </div>
 			</section>
+
+			<section id="piglet" class="bg-light">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-lg-12 mx-auto">
+					<h2>Piglet's Revenge</h2>
+					<p><i>Unity2D/C# — Fall 2016</i></p>
+					<br />
+					<img class="w-75 mx-auto d-block" src="img/piglet.png"></img>
+					<br />
+					<h5>Download Game: 
+					<a href="games/Piglet's Revenge PC.zip"><img  src="img/button-windows.png" width="50px"></img></a>
+					<a href="games/Piglet's Revenge Mac.zip"><img src="img/button-mac.png" width="50px"></img></a>
+					<a href="games/Piglet's Revenge Android.apk"><img  src="img/button-android.png" width="50px"></img></a></h5>
+					<p>Piglet's Revenge is an Angry Birds-inspired casual strategy shooter that won a class-voted prize for best game of the assignment in Fall 2016.
+					In Piglet's Revenge, the player controls Piglet on his quest to get revenge against Winnie the Pooh. Piglet also encounters Roo, Owl, and a host of other items from the children's series along the way.
+					The game utilized many of Unity's 2D features, expecially its physics engine. In its development, I was introduced to and became familiar with these features and C# scripting.
+					</p>
+					<p>My major responsibilities for this project included:
+						<ul>
+							<li>Developing the user interface and setting up the levels</li>
+							<li>Developing behavior scripts for all interactive game objects</li>
+							<li>Developing a scoring system</li>
+							<li>Developing the pot-breaking mechanism</li>
+						</ul>
+					</p>
+					<p>(Last updated: 2/2/2018)</p>
+				  </div>
+				</div>
+			  </div>
+			</section>
+			
 		  </div>
 
 		</main>
